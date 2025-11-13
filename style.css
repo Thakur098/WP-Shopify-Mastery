@@ -183,6 +183,8 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* 🚨 3D HOVER EFFECT */
@@ -274,7 +276,23 @@ footer {
     color: #666;
 }
 
-
+/* FIX: PROJECT ALIGNMENT KE LIYE NEW CODE */
+.project-card p {
+    min-height: 60px; /* Minimum 3 line ki height force ki */
+    flex-grow: 1; /* Description ko zyada space do */
+    padding: 10px 20px 15px;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+.project-card h3 {
+    padding: 20px 20px 5px;
+}
+.project-card .tags {
+    padding: 0 20px 15px;
+}
+.project-card .project-link {
+    margin-top: auto; /* Button hamesha bottom mein rahega */
+}
 /* Media Queries */
 @media (max-width: 900px) {
     .floating-header {
