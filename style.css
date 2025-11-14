@@ -308,3 +308,44 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
+@media (max-width: 768px) {
+    /* FIX: Header ab do line ka hai, toh content ko neeche dhakelo */
+    main {
+        padding-top: 140px; /* Isse overlap theek ho jaayega */
+    }
+    
+    /* Header fix: Header 768px par bhi stacked (ek ke neeche ek) rahega */
+    .floating-header {
+        flex-direction: column;
+        padding: 10px 5%;
+        height: auto;
+    }
+    .floating-header nav {
+        margin-top: 10px;
+    }
+    .floating-header nav a {
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+
+    /* Grid fix: Services aur Projects ab 1-column layout mein */
+    .service-grid, .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Hero text ko chhota karo */
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/*  2. VERY SMALL PHONES KE LIYE FIX (MAX-WIDTH: 480PX) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+}
