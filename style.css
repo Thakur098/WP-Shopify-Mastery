@@ -190,7 +190,7 @@ section {
 /* 🚨 3D HOVER EFFECT */
 .service-card:hover, .project-card:hover {
     border-top: 5px solid var(--accent-color);
-    transform: rotateY(3deg) translateY(-10px); /* TILT & LIFT */
+    transform: translateY(-8px); /* LIFT */
     box-shadow: 0 15px 60px rgba(0, 255, 255, 0.5), 0 0 25px rgba(0, 255, 255, 0.3); /* STRONG NEON GLOW */
 }
 
