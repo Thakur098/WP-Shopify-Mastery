@@ -131,8 +131,8 @@ section {
     display: flex;
     align-items: center;
     text-align: left;
-    /* Agar gym-bg-placeholder.png load nahin hoti, toh yeh background sirf black dikhega! */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('gym-bg-placeholder.png'); 
+    /* Agar gym-bg-placeholder.jpg load nahin hoti, toh yeh background sirf black dikhega! */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('gym-bg-placeholder.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax effect ke liye */
